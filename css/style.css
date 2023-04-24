@@ -31,6 +31,8 @@ body {
   justify-content: space-between;
 }
 
+
+
 .nav__hamburguer {
   width: 1.8rem;
   height: 25%;
@@ -234,7 +236,7 @@ body {
     overflow: unset;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .nav__item {
@@ -242,6 +244,10 @@ body {
     padding: 0;
     margin: 0;
     position: relative;
+  }
+
+  .nav__item .nav__arrow:target {
+    transform: rotate(180deg);
   }
 
   .nav__inner {
@@ -284,6 +290,12 @@ body {
     grid-template-areas: 
     "text img";
     padding: 3.5rem 0;
+  }
+
+  .main__cta:hover {
+    background-color: var(--almost-white);
+    color: var(--almost-black);
+    border: .1rem solid var(--almost-black);
   }
 
   .main__picture {
