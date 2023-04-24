@@ -200,4 +200,121 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 768px){
 
+  .container {
+    overflow: unset;
+    max-width: unset;
+  }
+  
+  .nav {
+    gap: 2rem;
+    overflow: visible; 
+    padding: 2rem 0 0;
+  }
+
+  .nav__hamburguer {
+    display: none;
+  }
+
+  .nav__overlay {
+    position: unset;
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: unset;
+    flex: 1;
+  }
+
+  .nav__menu {
+    position: unset; 
+    width: 100%;
+    max-width: unset;
+    padding: 0;
+    background-color: unset;
+    overflow: unset;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav__item {
+    width: max-content;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .nav__inner {
+    position: absolute ;
+    left: 0;
+    padding: 2rem;
+    height: auto;
+    width: max-content;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0, .7);
+    transition: opacity .3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav__inner--show {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  .nav__login {
+    width: max-content;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .nav__login--border {
+    margin: 0;
+    padding: 0 1.5rem ;
+  }
+
+  .main__grid {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "text img";
+    padding: 3.5rem 0;
+  }
+
+  .main__picture {
+    max-height: 29rem;
+  }
+
+  .main__img {
+    height: 100%;
+  }
+
+  .main__article {
+    text-align: left;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__brands {
+    margin: auto 0 0 0;
+  }
+
+  .main__texts {
+    margin: auto 0;
+  }
+
+  .main__title {
+    font-size: 3.5rem;
+  }
+
+  .main__paragraph {
+    margin: 2rem 0;
+  }
+
+}
